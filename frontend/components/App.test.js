@@ -12,15 +12,15 @@ test("AppFunctional renders correctly", () => {
   render(<AppFunctional />)
 })
 
-test("Renders error message when submit button is clicked without entering email", async () => {
-  render(<AppFunctional />)
+// test("Renders error message when submit button is clicked without entering email", async () => {
+//   render(<AppFunctional />)
 
-  const submit = screen.getByTestId("submit")
-  userEvent.click(submit)
+//   const submit = screen.getByTestId("submit")
+//   userEvent.click(submit)
 
-  const errorMessage = await screen.findByText(/ouch: email is required/i)
-  expect(errorMessage).toBeInTheDocument
-})
+//   const errorMessage = await screen.findByText(/ouch: email is required/i)
+//   expect(errorMessage).toBeInTheDocument
+// })
 
 test("Renders the Welcome to GRID header", () => {
   render(<AppFunctional />)
